@@ -1,12 +1,17 @@
 export const selectLibrary = (libraryId) => {
-    switch (action.type) {
-        case 'select_library':
-            return action.payload;
-            break;
-    
-        default:
-        return state;
-        
-    }
+     return {
+         type: 'select_library',
+         payload: libraryId
+     };
  
 }
+
+    // switch (action.type) {
+    //     case 'select_library':
+    //         return action.payload;
+    //         break;
+
+    //     default:
+    //         return state;
+
+    // }

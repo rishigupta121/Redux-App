@@ -14,7 +14,7 @@ class LibraryList extends Component {
   renderItem(library) {
     //console.log("hell");
     //console.log(library);
-    return <ListItem key={library.item.title} library = {
+    return <ListItem key={library.item.id} library = {
       library
     }
     />
@@ -22,7 +22,7 @@ class LibraryList extends Component {
   render() {
     //console.log(this.props.libraries);
     return ( <
-      FlatList key={this.props.libraries.title} data = {
+      FlatList  data = {
         this.props.libraries
       }
       renderItem = {
