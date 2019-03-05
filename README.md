@@ -10,9 +10,7 @@ To run this need expo v33.0 react, npm ,node
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+
 
 ### Installing
 
@@ -30,9 +28,6 @@ expo start --android
 
 #Default coding style
 
-```
-Give an example
-```
 
 ## Deployment
 
