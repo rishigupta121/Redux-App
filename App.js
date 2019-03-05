@@ -8,6 +8,7 @@ import LibraryList from './components/LibraryList';
 
 const App = () => {
   return (
+    // Provider Tag Facilitates the communication between react and redux they are two Separate library
     <Provider store={createStore(reducers)}>
       <View>
         <Header headerText="Redux App" />
