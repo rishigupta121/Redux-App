@@ -7,7 +7,7 @@ class ListItem extends Component {
   renderDescription() {
     const{ library, expanded} = this.props;
     if(expanded ) {
-      return(<Text>{library.description}</Text>);
+      return(<Text>{library.item.description}</Text>);
     }
   }
   render() {
@@ -17,8 +17,9 @@ class ListItem extends Component {
       <TouchableWithoutFeedback onPress = { () => this.props.selectLibrary(id)}>
       <View>
       <CardSection>
-      <Text style={styles.titleStyles}>{this.props.library.item.title}</Text>
+      <Text style={styles.titleStyles}>{title}</Text>
       </CardSection>
+      {this.renderDescription()}
       </View>
       </TouchableWithoutFeedback>
     );
@@ -33,8 +34,8 @@ const styles= {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  // const expanded= state.selectedLibraryId ===  ownProps.library.item.id;
-  // return {expanded}
+  const expanded= state.selectedLibraryId ===  ownProps.library.item.id;
+  return {expanded}
   //return { selectedLibraryId: state.selectedLibraryId}
 };
 

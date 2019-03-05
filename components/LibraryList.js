@@ -14,7 +14,7 @@ class LibraryList extends Component {
   renderItem(library) {
     //console.log("hell");
     //console.log(library);
-    return <ListItem key={library.item.id} library = {
+    return <ListItem key={library.item.title} library = {
       library
     }
     />
